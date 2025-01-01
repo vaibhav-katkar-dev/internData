@@ -156,9 +156,8 @@ app.get("/",(req,res)=>{
     res.render("home")
 })
 
-app.get("/io",(req,res)=>{
-    res.render("io")
-})
+
+
 app.get("/internship",(req,res)=>{
     res.render("index")
 })
