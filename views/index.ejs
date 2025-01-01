@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Application Form</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- Styles -->
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      color: #2c3e50;
+      margin: 0;
+    }
+
+    header h1:first-child {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    header h1:last-child {
+      font-size: 18px;
+      color: #95a5a6;
+      margin-top: 8px;
+    }
+
+    form {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    form h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: 500;
+      color: #34495e;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #dcdde1;
+      border-radius: 6px;
+      font-size: 15px;
+      color: #34495e;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #3498db;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+
+    input[type="submit"]:active {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 30px;
+      }
+
+      header h1:first-child {
+        font-size: 26px;
+      }
+
+      input[type="submit"] {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Header -->
+    <header>
+      <h1>JOIN OUR PROGRAM</h1>
+      <h1>APPLICATION  START FROM : 1 JANAVARY </h1>
+    </header>
+
+    <!-- Form -->
+    <form action="/internship" method="post">
+      <h2>Internship Application Form</h2>
+
+      <label for="email">Enter Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="name">Enter Your Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+      <label for="phone">Enter Your Contact Number</label>
+      <input type="text" id="phone" name="pno" placeholder="Contact Number" required>
+
+      <label for="college">Enter Your College</label>
+      <input type="text" id="college" name="cname" placeholder="College Name" required>
+
+      <label for="address">Enter Your Address</label>
+      <input type="text" id="address" name="add" placeholder="Address" required>
+
+      <label for="trade">Enter Your Trade</label>
+      <input type="text" id="trade" name="trade" placeholder="Trade" required>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

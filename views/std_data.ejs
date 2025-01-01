@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .student-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .student-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .student-card p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .student-card p span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        #button {
+            padding: 5px;
+            background-color: #1072f1;
+            border-radius: 5px;
+            height: fit-content;
+            width: fit-content;
+            border: 0px;
+            color: #ffffff;
+            align-self: flex-end;
+            margin: 10px;
+            font-size: medium;
+            margin: top 10px; ;
+
+        }
+
+        #button:hover {
+            background-color: #788ce7;
+            color: #333;
+            transform: translateX(5px);
+            
+        }
+        .print{
+            width: 100%;
+            border: 0px solid;
+            margin-top: 10px;
+            height:fit-content;
+            display:inline-flex;
+            flex-direction: column;
+            justify-content: end;
+            overflow:hidden ;
+
+        }
+        
+        #si{
+            align-self: center;
+            font-size: medium;
+            font-weight: bold;
+
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:#4e4e4e
+            ;
+
+
+        }
+
+        
+        .nav{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+           background-color:#f0f4f8;
+            flex-direction: row;
+            justify-content: center;
+            
+            height: fit-content;
+            width:100vw ;
+        }
+        .navbar a{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(223, 126, 0);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 1px;
+            size: 19px;
+            width: 14px;
+            text-decoration: none;
+            text-shadow: none;
+            color: #ffffff;
+            
+        }
+        .navbar a:hover{
+            text-shadow: #000000;
+            transition: 0.5s;
+            background-color: #e79d57;
+            color: black;
+           
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+    <div class="print">
+        <div class="nav">
+        
+            <%-include("includes/nav.ejs")%>
+        </div>
+        
+        <p id="si">Student Information <button id="button" onclick="window.print()">Print</button></p>
+    </div>
+
+    <form method="post" action="/admin">
+        <div class="student-container">
+            <% for (std of std_data) { %>
+                <div class="student-card">
+
+                        
+                    <p><span>Name:</span>
+                        <%= std.name %>
+                    </p>
+                    <p><span>Email:</span>
+                        <%= std.email %>
+                    </p>
+                    <p><span>Phone:</span>
+                        <%= std.phone_no %>
+                    </p>
+                    <p><span>College:</span>
+                        <%= std.colledge_name %>
+                    </p>
+                    <p><span>Address:</span>
+                        <%= std.address %>
+                    </p>
+                    <p><span>Trade:</span>
+                        <%= std.trade %>
+                    </p>
+                    <p><span>Id:</span>
+                        <%= std._id %>
+                    </p>
+                    
+                    
+
+                </div>
+                <% } %>
+        </div>
+    </form>
+</body>
+
+</html>
