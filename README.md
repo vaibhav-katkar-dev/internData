@@ -25,7 +25,7 @@ A small project for practicing backend development using Node.js, Express, Mongo
    ![Student Data Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/std_data.PNG)  
    The page showing the student data, displaying submitted details in a structured format.
 
-
+---
 
 ## **Project Setup**
 
