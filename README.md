@@ -3,10 +3,12 @@
 
 A small project for practicing backend development using Node.js, Express, Mongoose, and EJS. This project focuses on dynamic content rendering and basic data input operations.  
 
+
 ## **Screenshots**
 
+
 1. **Home Page Screenshot**  
-   ![Home Page Screenshot](./Screenshot/home.PNG)  
+   ![Home Page Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/home.PNG)  
    The main landing page of the application showcasing the initial view and navigation options.
 
 2. **Form Page Screenshot**  
