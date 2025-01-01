@@ -10,19 +10,19 @@ A small project for practicing backend development using Node.js, Express, Mongo
    The main landing page of the application showcasing the initial view and navigation options.
 
 2. **Form Page Screenshot**  
-   ![Form Page Screenshot](./Screenshot/form.PNG)  
+   ![Form Page Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/form.PNG)  
    The form used for data entry, allowing users to input required details.
 
 3. **Result Page Screenshot**  
-   ![Result Page Screenshot](./Screenshot/result.PNG)  
+   ![Result Page Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/result.PNG)  
    The results page displaying the processed information after form submission.
 
 4. **Login Page Screenshot**  
-   ![Login Page Screenshot](./Screenshot/login.PNG)  
+   ![Login Page Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/login.PNG)  
    The login page where the admin can authenticate using the set username and password.
 
 5. **Student Data Page Screenshot**  
-   ![Student Data Screenshot](./Screenshot/std_data.PNG)  
+   ![Student Data Screenshot](https://github.com/vaibhav-katkar-dev/internData/blob/main/Screenshots/std_data.PNG)  
    The page showing the student data, displaying submitted details in a structured format.
 
 
