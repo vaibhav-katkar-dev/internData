@@ -14,7 +14,7 @@ main().then(() => {
 });
 
 async function main() {
-    await mongoose.connect("mongodb+srv://intern:bnOm92NhH7yV7x2i@cluster0.9gfkc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    await mongoose.connect("mongodb://127.0.0.1:27017/internship")
 };
 
 
