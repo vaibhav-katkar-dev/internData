@@ -1,5 +1,5 @@
 
-# **intenData**
+# **internData**
 
 A small project for practicing backend development using Node.js, Express, Mongoose, and EJS. This project focuses on dynamic content rendering and basic data input operations.  
 
